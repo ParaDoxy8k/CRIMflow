@@ -5,6 +5,6 @@
 	let { children } = $props();
 </script>
 
-<Nav />
+<!-- <Nav /> -->
 {@render children()}
 <Footer />

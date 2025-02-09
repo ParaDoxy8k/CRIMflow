@@ -1,5 +1,5 @@
-<div>
-    <p class="text-center">
-        HI svelte
-    </p>
-</div>
+<footer class=" h-2.5">
+     <div>
+        
+     </div>
+</footer>

@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 *{
-    font-family: "IBM Plex Sans Thai";
+    font-family: "IBM Plex Sans Thai", serif;
 }
