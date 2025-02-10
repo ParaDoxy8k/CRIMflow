@@ -3,3 +3,11 @@
 *{
     font-family: "IBM Plex Sans Thai", serif;
 }
+#openButton {
+    left: 16px; /* เริ่มต้นที่ขอบซ้าย */
+    transition: left 0.35s ease-in-out;
+}
+
+.sidebar-open #openButton {
+    left: 260px; /* ขยับไปตาม Sidebar ที่เปิดออก */
+}
