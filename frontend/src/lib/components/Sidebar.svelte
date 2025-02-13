@@ -39,7 +39,7 @@
 			<ul class="space-y-2 font-medium">
 				<li>
 					<a
-						href="/home"
+						href="/"
 						class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
 					>
 						<i
