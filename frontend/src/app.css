@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 *{
-    font-family: "IBM Plex Sans Thai", serif;
+    font-family: "Kanit", serif;
 }
 #openButton {
     left: 16px; /* เริ่มต้นที่ขอบซ้าย */

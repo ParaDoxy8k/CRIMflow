@@ -2,7 +2,7 @@
 	<!-- ปุ่มเปิด Sidebar -->
 	<button
 		id="openButton"
-		class="duration-400 fixed left-4 top-5 z-50 rounded-lg bg-transparent p-2 text-gray-400 transition-all hover:bg-gray-600"
+		class="duration-400 fixed left-4 top-5 z-50 rounded-lg bg-transparent p-2 text-gray-400 transition-all font-[Kanit, serif] hover:bg-gray-600"
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

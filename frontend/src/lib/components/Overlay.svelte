@@ -7,28 +7,36 @@
 
 {#if open}
 	<div
-		class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+		class="fixed inset-0 z-50 flex items-center justify-center bg-transparent"
 		role="button"
 		tabindex="0"
 		on:click={close}
 		on:keydown={(e) => e.key === 'Enter' && close()}
 	>
 		<div
-			class="relative w-full max-w-lg rounded-md bg-white p-6 shadow-md"
+			class="relative w-full max-w-lg rounded-md bg-stone-800 p-6 shadow-md"
 		>
 			{#if product}
+			<div>
 				<img src={product.imageUrl} alt={product.title} class="mb-4 object-cover" />
-				<h2 class="text-xl font-bold">{product.title}</h2>
-				<p>ราคา: {product.price}฿</p>
-				<p>คงเหลือ: {product.stock} ชิ้น</p>
+			</div>
+			<div class="flex justify-between text-white">
+				<div>
+					<h2 class="text-xl  font-bold">{product.title}</h2>
+					<p>ราคา: {product.price}฿</p>
+					<p>คงเหลือ: {product.stock} ชิ้น</p>
+				</div>
+				<div>
+					<button
+						class="flex rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+						on:click={() => isOverlayOpen.set(false)}
+					>
+						&times;
+					</button>
+				</div>
+			</div>
 			{/if}
-
-			<button
-				class="mt-4 rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
-				on:click={() => isOverlayOpen.set(false)}
-			>
-				&times;
-			</button>
+			
 		</div>
 	</div>
 {/if}
