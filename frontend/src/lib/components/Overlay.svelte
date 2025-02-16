@@ -8,11 +8,13 @@
 {#if open}
 	<div
 		class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+		role="button"
+		tabindex="0"
 		on:click={close}
+		on:keydown={(e) => e.key === 'Enter' && close()}
 	>
 		<div
 			class="relative w-full max-w-lg rounded-md bg-white p-6 shadow-md"
-			on:click|stopPropagation
 		>
 			{#if product}
 				<img src={product.imageUrl} alt={product.title} class="mb-4 object-cover" />
@@ -23,13 +25,14 @@
 
 			<button
 				class="mt-4 rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
-				on:click={close}
+				on:click={() => isOverlayOpen.set(false)}
 			>
-				ปิด
+				&times;
 			</button>
 		</div>
 	</div>
 {/if}
+
 <!-- <div class="w-screen h-screen fixed top-0 left-0 flex justify-center items-center bg-transparent z-99">
         <div class="bg-stone-900 text-white rounded-md px-8 py-10 relative max-w-lg">
             <button class="absolute top-2 right-3 text-4xl text-gray-300 hover:-translate-y-0.5 transition-tranfrom"

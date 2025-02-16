@@ -3,14 +3,14 @@
 >
 	<div class="my-auto">
 		<p class="mb-2 text-center text-white/60 md:mb-0 md:text-left">
-			© 2023<!-- -->- 2025<!-- --> <span><a class="text-white" href="/">AR-cade</a></span>, All
+			© 2023<!-- -->- 2025<!-- --> <span><a class="text-white" href="/">CRIMflow</a></span>, All
 			rights reserved.
 		</p>
 	</div>
 	<div class="my-auto">
 		<div class="text-center text-white/60 md:text-right">
 			<p class="text-sm">
-				Powered by<!-- --> <a class="text-white" href="https://altsera.com/">Altsera</a>
+				Powered by<!-- --> <a class="text-white" href="https://paralez.vercel.app/">ParaDoxy8k</a>
 				<!-- -->(© 2018-<!-- -->2025<!-- -->)
 			</p>
 			<p class="text-xs">

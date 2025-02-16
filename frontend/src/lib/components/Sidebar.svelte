@@ -1,4 +1,3 @@
-<!-- drawer init and show -->
 <div class="relative">
 	<!-- ปุ่มเปิด Sidebar -->
 	<button

@@ -6,14 +6,12 @@
     </div>
 
     <div class="relative flex flex-col items-center text-center text-white">
-        <img src="https://i2.wp.com/genshinbuilds.aipurrjects.com/genshin/characters/arlecchino/image.png?strip=all&quality=75&w=256" 
-            class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 md:border-4 border-white shadow-lg" 
-            alt="profile">
-
-        <h1 class="mt-3 text-xl md:text-2xl font-bold">Crimson IDs</h1>
-
-        <p class="mt-2 text-xs md:text-sm max-w-lg">
+        <img src="images/logo_b-removebg.png" 
+            class="w-65 h-65 md:w-80 md:h-80 drop-shadow-xl" 
+            alt="logo">
+        <!-- <h1 class="mt-3 text-xl md:text-2xl font-bold"></h1> -->
+        <!-- <p class="mt-2 text-xs md:text-sm max-w-lg">
             discription
-        </p>
+        </p> -->
     </div>
 </main>
