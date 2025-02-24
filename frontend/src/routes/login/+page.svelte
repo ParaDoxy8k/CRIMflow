@@ -1,5 +1,5 @@
 <main class="flex h-screen items-center justify-center bg-wirte dark:bg-slate-850">
-	<div class="items-center justify-center rounded-lg border w-1/4 border-amber-50 shadow-lg">
+	<div class="items-center justify-center rounded-lg border w-2.5/4 min-md:w-md border-amber-50 shadow-lg">
 		<div>
 			<p class="py-3 text-center text-5xl font-bold text-white ">เข้าสู่ระบบ</p>
 		</div>

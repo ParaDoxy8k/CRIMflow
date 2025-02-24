@@ -2,7 +2,7 @@
 	<!-- ปุ่มเปิด Sidebar -->
 	<button
 		id="openButton"
-		class="duration-400 fixed left-4 top-5 z-50 rounded-lg bg-transparent p-2 text-gray-400 transition-all font-[Kanit, serif] hover:bg-gray-600"
+		class="duration-400 font-[Kanit, serif] fixed left-4 top-5 z-50 rounded-lg bg-transparent p-2 text-gray-400 transition-all hover:bg-gray-600"
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +83,52 @@
 							/>
 						</svg>
 						<span class="ms-3 flex-1 whitespace-nowrap">Products</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="/dashboard"
+						class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+					>
+						<svg viewBox="0 0 24 24" fill="none" 
+						class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+						xmlns="http://www.w3.org/2000/svg"
+							><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g><g id="SVGRepo_iconCarrier">
+								<path
+									d="M21 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V3M7 7L12 13L16 9L21 15"
+									stroke="#000000"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									style="--darkreader-inline-stroke: var(--darkreader-text-000000, #e8e6e3);"
+									data-darkreader-inline-stroke=""
+								></path>
+							</g></svg
+						>
+						<span class="ms-3 flex-1 whitespace-nowrap">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="/topup"
+						class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+					>
+						<svg
+							class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="currentColor"
+							viewBox="0 0 18 20"
+						>
+							<path
+								d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"
+							/>
+						</svg>
+						<span class="ms-3 flex-1 whitespace-nowrap">Topup</span>
 					</a>
 				</li>
 				<li>

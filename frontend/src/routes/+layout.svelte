@@ -11,7 +11,9 @@
 </script>
 
 <Sidebar />
-<ProfileMenu />
+{#if $page.url.pathname !== '/'}
+	<ProfileMenu />
+{/if}
 {#if $isOverlayOpen }
 	<Overlay />
 {/if}
