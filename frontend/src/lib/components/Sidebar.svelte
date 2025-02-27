@@ -1,3 +1,15 @@
+<script>
+    import { writable } from "svelte/store";
+  
+    let profileMenu = writable(false);
+    let user = {
+      name: "Bia",
+      email: "beer@example.com",
+      avatar: "/images/logo_a.png",
+      credit: 9999
+    };
+
+  </script>
 <div class="relative">
 	<!-- ปุ่มเปิด Sidebar -->
 	<button
@@ -23,7 +35,7 @@
 	<!-- Sidebar -->
 	<div
 		id="drawer-navigation"
-		class="duration-400 fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transform overflow-y-auto bg-white p-7 transition-transform dark:bg-gray-800"
+		class="duration-400 fixed left-0 top-0 z-40 h-screen w-56 -translate-x-full transform overflow-y-auto bg-white p-7 transition-transform dark:bg-gray-800"
 		tabindex="-1"
 		aria-labelledby="drawer-navigation-label"
 	>
@@ -31,9 +43,12 @@
 			id="drawer-navigation-label"
 			class="text-base font-semibold uppercase text-gray-500 dark:text-gray-400"
 		>
-			Menu
+			CRIMflow
 		</h5>
-
+		<div class="flex">
+			<img src={user.avatar} alt="Avatar" class="flex w-25 h-25 justify-center items-center rounded-full">
+			<h1 class="text-center">{user.name}</h1>
+		</div>
 		<div class="overflow-y-auto py-4">
 			<ul class="space-y-2 font-medium">
 				<li>

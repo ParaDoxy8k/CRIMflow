@@ -9,8 +9,9 @@
 }
 
 .sidebar-open #openButton {
-    left: 260px; /* ขยับไปตาม Sidebar ที่เปิดออก */
+    left: 180px; /* ขยับไปตาม Sidebar ที่เปิดออก */
 }
+
 .container{
     width: 100%;
 }

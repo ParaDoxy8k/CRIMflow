@@ -16,20 +16,70 @@
 			document.addEventListener('DOMContentLoaded', function () {
 				const sidebar = document.getElementById('drawer-navigation');
 				const openButton = document.getElementById('openButton');
-				const closeButton = document.querySelector("[data-drawer-hide='drawer-navigation']");
 				const body = document.body;
-
+				
+				// กำหนด breakpoint (768px สำหรับแยกมือถือกับเดสก์ท็อป)
+				const desktopBreakpoint = 768;
+			
+				// ฟังก์ชันตรวจสอบขนาดหน้าจอและอัพเดต sidebar
+				function updateSidebar() {
+					if (window.innerWidth >= desktopBreakpoint) {
+						// เดสก์ท็อป: ล็อก sidebar ให้แสดงตลอด
+						sidebar.classList.remove('-translate-x-full');
+						body.classList.add('sidebar-open');
+						openButton.style.display = 'none'; // ซ่อนปุ่มเปิด
+						sidebar.style.position = 'fixed'; // ล็อกตำแหน่ง sidebar
+					} else {
+						// มือถือ: ซ่อน sidebar เริ่มต้น และแสดงปุ่ม
+						sidebar.classList.add('-translate-x-full');
+						body.classList.remove('sidebar-open');
+						openButton.style.display = 'block'; // แสดงปุ่มเปิด
+						sidebar.style.position = 'fixed'; // ยังคง fixed แต่ซ่อนด้วย transform
+					}
+				}
+			
+				// เรียกฟังก์ชันเมื่อโหลดหน้าและเมื่อขนาดหน้าจอเปลี่ยน
+				updateSidebar();
+				window.addEventListener('resize', updateSidebar);
+			
+				// การทำงานของปุ่มเปิด (สำหรับมือถือเท่านั้น)
 				openButton.addEventListener('click', function () {
-					sidebar.classList.toggle('-translate-x-full');
-					body.classList.toggle('sidebar-open');
+					if (window.innerWidth < desktopBreakpoint) {
+						sidebar.classList.toggle('-translate-x-full');
+						body.classList.toggle('sidebar-open');
+					}
 				});
-
-				closeButton.addEventListener('click', function () {
-					sidebar.classList.add('-translate-x-full');
-					body.classList.remove('sidebar-open');
+			
+				// ปิด sidebar เมื่อคลิกนอก sidebar (เฉพาะมือถือ)
+				document.addEventListener('click', function (event) {
+					if (window.innerWidth < desktopBreakpoint && 
+						!sidebar.contains(event.target) && 
+						!openButton.contains(event.target) && 
+						!sidebar.classList.contains('-translate-x-full')) {
+						sidebar.classList.add('-translate-x-full');
+						body.classList.remove('sidebar-open');
+					}
 				});
 			});
-		</script>
+			</script>
+			<!-- <script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const sidebar = document.getElementById('drawer-navigation');
+					const openButton = document.getElementById('openButton');
+					const closeButton = document.querySelector("[data-drawer-hide='drawer-navigation']");
+					const body = document.body;
+	
+					openButton.addEventListener('click', function () {
+						sidebar.classList.toggle('-translate-x-full');
+						body.classList.toggle('sidebar-open');
+					});
+	
+					closeButton.addEventListener('click', function () {
+						sidebar.classList.add('-translate-x-full');
+						body.classList.remove('sidebar-open');
+					});
+				});
+			</script> -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -37,6 +87,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<title>CRIMflow</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>

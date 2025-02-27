@@ -8,7 +8,7 @@
       avatar: "/images/logo_a.png",
       credit: 9999
     };
-  
+
   </script>
 <div class="absolute flex justify-end z-50 top-5 right-4 m-2">
     <button on:click={()=> profileMenu.update(v => !v)} class="flex h-12 w-12 items-center justify-center rounded-full hover:bg-gray-800">
