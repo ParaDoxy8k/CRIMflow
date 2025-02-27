@@ -1,6 +1,6 @@
 <script>
-	import LineCharts from '$lib/components/LineCharts.svelte';
-	import BarCharts from '$lib/components/BarCharts.svelte';
+	import LineCharts from '$lib/components/dashboard/LineCharts.svelte';
+	import BarCharts from '$lib/components/dashboard/BarCharts.svelte';
 </script>
 
 <div

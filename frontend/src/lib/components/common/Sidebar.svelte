@@ -45,8 +45,8 @@
 		>
 			CRIMflow
 		</h5>
-		<div class="flex">
-			<img src={user.avatar} alt="Avatar" class="flex w-25 h-25 justify-center items-center rounded-full">
+		<div class="">
+			<img src={user.avatar} alt="Avatar" class="w-25 h-25 justify-center items-center rounded-full">
 			<h1 class="text-center">{user.name}</h1>
 		</div>
 		<div class="overflow-y-auto py-4">

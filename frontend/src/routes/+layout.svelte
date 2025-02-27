@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
-	import Sidebar from '$lib/components/Sidebar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import Sidebar from '$lib/components/common/Sidebar.svelte';
+	import Footer from '$lib/components/common/Footer.svelte';
 	import { page } from '$app/stores';
 	import {isOverlayOpen} from '../stores/Overlay.js';
 	import Overlay from '$lib/components/Overlay.svelte';
