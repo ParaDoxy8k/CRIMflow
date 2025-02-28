@@ -1,4 +1,4 @@
-<main class="relative flex flex-col items-center justify-center min-h-1/2 bg-gray-900 ">
+<main class="relative flex-1 flex-col items-center justify-center min-h-1/2 bg-gray-900 ">
     <section class="">
         <div class="absolute inset-0 ">
             <img src="https://fastcdn.hoyoverse.com/content-v2/plat/123439/c39dd0699f78411122c6c9797d57a592_2453993112493080017.jpeg" 
@@ -16,12 +16,12 @@
             </p>  -->
         </div>
     </section>
+    <section class="bg-gray-900 flex-1">
+        <div class="flex justify-center text-center m-5 text-8xl font-bold  dark:text-white">
+            <h1>Popular</h1>
+        </div>
+        <div class="flex-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ratione.</p>
+        </div>
+    </section>
 </main>
-<section class="bg-gray-900">
-    <div class="flex justify-center text-center m-5 text-8xl font-bold dark:text-white">
-        <h1>Popular</h1>
-    </div>
-    <div class=" flex-col">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ratione.</p>
-    </div>
-</section>

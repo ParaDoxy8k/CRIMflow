@@ -7,11 +7,11 @@
 	class="relative flex min-h-[200px] bg-gradient-to-b from-stone-950 to-transparent py-6 pb-32 pt-12 sm:py-0 md:pt-32"
 >
 	<div class="absolute bottom-0 top-5 flex h-fit w-full justify-center">
-		<h1 class="items-center justify-center text-7xl font-bold text-white">Dashboard</h1>
+		<h1 class="items-center justify-center text-6xl md:text-7xl font-bold text-white">Dashboard</h1>
 	</div>
 	
 </div>
-<main>
+<main class="ml-auto lg:ml-[220px]">
     <div class="mx-auto w-full px-4 md:px-10">
 		<div>
 			<div class="flex flex-wrap">

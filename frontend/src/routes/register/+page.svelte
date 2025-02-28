@@ -41,7 +41,7 @@
 	}
 </script>
 
-<main class="flex min-h-screen items-center justify-center">
+<main class="flex min-h-screen items-center justify-center ml-auto lg:ml-[220px]">
 	<div class="w-2.5/4 min-md:w-md items-center justify-center rounded-lg border border-amber-50 shadow-lg">
 		<form on:submit|preventDefault={handleSubmit}>
 			<div>

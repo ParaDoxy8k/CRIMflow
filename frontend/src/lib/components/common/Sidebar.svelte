@@ -10,11 +10,11 @@
     };
 
   </script>
-<div class="relative">
+<div class="flex">
 	<!-- ปุ่มเปิด Sidebar -->
 	<button
 		id="openButton"
-		class="duration-400 font-[Kanit, serif] fixed left-4 top-5 z-50 rounded-lg bg-transparent p-2 text-gray-400 transition-all hover:bg-gray-600"
+		class="duration-400 fixed left-4 top-5 z-50 rounded-lg bg-transparent p-2 text-gray-400 transition-all hover:bg-gray-600"
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -45,9 +45,10 @@
 		>
 			CRIMflow
 		</h5>
-		<div class="">
-			<img src={user.avatar} alt="Avatar" class="w-25 h-25 justify-center items-center rounded-full">
-			<h1 class="text-center">{user.name}</h1>
+		<div class="grid justify-center items-center p-4">
+			<img src={user.avatar} alt="Avatar" class="w-25 h-25 object-center rounded-full">
+			<h1 class="text-center mt-2">{user.name}</h1>
+			<div class="text-xl text-center m-2 bg-slate-900 rounded-2xl text-white">{user.credit} $</div>
 		</div>
 		<div class="overflow-y-auto py-4">
 			<ul class="space-y-2 font-medium">

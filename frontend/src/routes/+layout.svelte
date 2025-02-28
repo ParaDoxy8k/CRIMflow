@@ -8,13 +8,16 @@
 
 	let { children } = $props();
 </script>
+<div class="flex h-screen">
+	<Sidebar />
+	<main class="flex-1 bg-gray-900 overflow-y-auto">
+		{#if $isOverlayOpen }
+			<Overlay />
+		{/if}
 
-<Sidebar />
-{#if $isOverlayOpen }
-	<Overlay />
-{/if}
-
-{@render children()}
-{#if $page.url.pathname !== '/'}
-	<Footer />
-{/if}
+		{@render children()}
+		<!-- {#if $page.url.pathname !== '/'}
+			<Footer />
+		{/if} -->
+	</main>
+</div>

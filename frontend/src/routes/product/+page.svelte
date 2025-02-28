@@ -17,7 +17,7 @@
             <a href="/"><img class="w-[120px] h-[120px] transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-120" src="/images/logo_b-removebg.png" alt="logo"></a>
         </div>
     </div>
-  <div class="container px-4 mx-auto flex flex-wrap justify-center gap-8 pb-24">
+  <div class="px-4 mx-auto lg:mx-[220px] flex flex-wrap justify-center gap-8 pb-24">
     {#each $products as product}
       <div class="w-[350px] rounded-xl overflow-hidden">
         <img
@@ -39,10 +39,10 @@
     {/each}
   </div>
 </main>
-  <!-- Overlay (รับค่าจาก store) -->
-  <Overlay
+<!-- Overlay (รับค่าจาก store) -->
+<Overlay
     open={$isOverlayOpen}
     product={$selectedProduct}
     on:close={closeOverlay}
-  />
+/>
   
