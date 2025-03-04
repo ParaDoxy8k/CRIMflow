@@ -28,8 +28,8 @@
             {
               label: new Date().getFullYear() - 1,
               fill: false,
-              backgroundColor: "#fff5f5",
-              borderColor: "#fff5f5",
+              backgroundColor: "#4c51bf",
+              borderColor: "#4c51bf",
               data: [40, 68, 86, 74, 56, 60, 87],
             },
           ],
@@ -40,11 +40,11 @@
           title: {
             display: false,
             text: "Sales Charts",
-            fontColor: "white",
+            fontColor: "black",
           },
           legend: {
             labels: {
-              fontColor: "white",
+              fontColor: "black",
             },
             align: "end",
             position: "bottom",
@@ -61,20 +61,20 @@
             xAxes: [
               {
                 ticks: {
-                  fontColor: "rgba(255,255,255,.7)",
+                  fontColor: "rgba(86, 86, 86, 1)",
                 },
                 display: true,
                 scaleLabel: {
                   display: false,
                   labelString: "Month",
-                  fontColor: "white",
+                  fontColor: "black",
                 },
                 gridLines: {
                   display: false,
                   borderDash: [2],
                   borderDashOffset: [2],
                   color: "rgba(33, 37, 41, 0.3)",
-                  zeroLineColor: "rgba(0, 0, 0, 0)",
+                  zeroLineColor: "rgba(33, 37, 41, 0.3)",
                   zeroLineBorderDash: [2],
                   zeroLineBorderDashOffset: [2],
                 },
@@ -83,20 +83,20 @@
             yAxes: [
               {
                 ticks: {
-                  fontColor: "rgba(255,255,255,.7)",
+                  fontColor: "rgba(86, 86, 86, 1)",
                 },
                 display: true,
                 scaleLabel: {
                   display: false,
                   labelString: "Value",
-                  fontColor: "white",
+                  fontColor: "black",
                 },
                 gridLines: {
                   borderDash: [3],
                   borderDashOffset: [3],
                   drawBorder: false,
-                  color: "rgba(255, 255, 255, 0.15)",
-                  zeroLineColor: "rgba(33, 37, 41, 0)",
+                  color: "rgba(33, 37, 41, 0.2)",
+                  zeroLineColor: "rgba(33, 37, 41, 0.15)",
                   zeroLineBorderDash: [2],
                   zeroLineBorderDashOffset: [2],
                 },
@@ -111,15 +111,15 @@
   </script>
   
   <div
-    class="relative flex flex-col min-w-0 break-words bg-slate-800 w-full mb-6 shadow-lg rounded bg-blueGray-700"
+    class="relative flex flex-col min-w-0 break-words bg-white dark:bg-slate-800 w-full mb-6 shadow-lg rounded bg-blueGray-700"
   >
-    <div class="rounded-t mb-0 px-4 py-3 bg-slate-900">
+    <div class="rounded-t mb-0 px-4 py-3 bg-stone-400 dark:bg-slate-900">
       <div class="flex flex-wrap items-center">
         <div class="relative w-full max-w-full flex-grow flex-1">
-          <h6 class="uppercase text-blueGray-100 mb-1 text-xs font-semibold text-white">
+          <h6 class="uppercase text-blueGray-100 mb-1 text-xs font-semibold dark:text-white">
             Overview
           </h6>
-          <h2 class="text-white text-xl font-semibold">
+          <h2 class="dark:text-white text-xl font-semibold">
             Sales value
           </h2>
         </div>

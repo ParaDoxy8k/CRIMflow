@@ -53,7 +53,7 @@
           },
           legend: {
             labels: {
-              fontColor: "rgba(0,0,0,.4)",
+              fontColor: "black",
             },
             align: "end",
             position: "bottom",
