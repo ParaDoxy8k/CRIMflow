@@ -1,27 +1,29 @@
-<main class="relative flex-1 flex-col items-center justify-center min-h-1/2 bg-gray-900 ">
-    <section class="">
-        <div class="absolute inset-0 ">
-            <img src="https://fastcdn.hoyoverse.com/content-v2/plat/123439/c39dd0699f78411122c6c9797d57a592_2453993112493080017.jpeg" 
-                class="w-full h-full object-cover blur-lg brightness-50" 
-                alt="background">
+<main class="">
+    <div class="container ml-auto lg:ml-[220px]">
+        <img src="images/logo_b-removebg.png" alt="logo" class="w-50 h-50">
+    </div>
+    <div class="not-prose overflow-auto rounded-lg bg-white outline outline-white/5 dark:bg-gray-950/50 p-8 mx-auto lg:mx-[240px]">
+        <div class="grid grid-cols-1">
+            <div class="col-start-1 row-start-1 rounded-lg border text-black/10 dark:text-white/12.5 bg-[size:8px_8px] bg-left-top bg-[image:repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)]">
+                <div class="col-start-1 row-start-1 flex flex-nowrap gap-4 rounded-lg font-mono text-sm/6 font-bold text-white">
+                    <div class="w-2/5 flex-none last:pr-8">
+                        <div class="flex w-full items-center justify-center rounded-lg bg-sky-500 p-4">
+                            01
+                        </div>
+                    </div>
+                    <div class="w-2/5 flex-none last:pr-8">
+                        <div class="flex w-full items-center justify-center rounded-lg bg-sky-500 p-4">
+                            02
+                        </div>
+                    </div>
+                    <div class="w-2/5 flex-none last:pr-8">
+                        <div class="flex w-full items-center justify-center rounded-lg bg-sky-500 p-4">
+                            03
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="relative flex flex-col items-center text-center text-white">
-            <img src="images/logo_b-removebg.png" 
-                class="w-65 h-65 md:w-80 md:h-80 drop-shadow-xl" 
-                alt="logo">
-            <!-- <h1 class="mt-3 text-xl md:text-2xl font-bold"></h1>
-            <p class="mt-2 text-xs md:text-sm max-w-lg">
-                discription
-            </p>  -->
-        </div>
-    </section>
-    <section class="bg-gray-900 flex-1">
-        <div class="flex justify-center text-center m-5 text-8xl font-bold  dark:text-white">
-            <h1>Popular</h1>
-        </div>
-        <div class="flex-1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ratione.</p>
-        </div>
-    </section>
+        
+    </div>
 </main>
