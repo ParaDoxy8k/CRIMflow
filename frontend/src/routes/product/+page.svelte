@@ -25,7 +25,7 @@
           src={product.imageUrl}
           alt={product.title}
         />
-        <div class="relative dark:text-white p-4 pr-20 dark:bg-gray-900 bg-white">
+        <div class="relative dark:text-white p-4 pr-20 dark:bg-gray-900 bg-accert">
             <h1 class="text-xl font-bold leading-tight mb-2">{product.title}</h1>
             <p class="text-sm mb-4">เหลือ {product.stock} ชิ้น</p>
             <p class="dark:text-white/60 text-sm">{product.price}฿</p>

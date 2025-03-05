@@ -1,5 +1,6 @@
 <script>
 	import { writable } from 'svelte/store';
+	import { ArrowLeftRight } from 'lucide-svelte';
 
 	let profileMenu = writable(false);
 	let user = {
@@ -35,7 +36,7 @@
 	<!-- Sidebar -->
 	<div
 		id="drawer-navigation"
-		class="duration-400 fixed left-0 top-0 z-40 h-screen w-56 -translate-x-full transform overflow-y-auto bg-white p-7 transition-transform dark:bg-gray-800"
+		class="duration-400 fixed left-0 top-0 z-40 h-screen w-56 -translate-x-full transform overflow-y-auto bg-white p-7 transition-transform dark:bg-zinc-800"
 		tabindex="-1"
 		aria-labelledby="drawer-navigation-label"
 	>
@@ -53,7 +54,7 @@
 			/>
 			<h1 class="mt-2 text-center dark:text-white">{user.name}</h1>
 			<div
-				class="m-2 rounded-2xl bg-slate-900 text-center text-xl text-white drop-shadow-lg dark:bg-white dark:text-slate-950"
+				class="m-2 rounded-2xl bg-zinc-800 text-center text-xl text-white drop-shadow-lg dark:bg-white dark:text-slate-950"
 			>
 				{user.credit} $
 			</div>
@@ -125,6 +126,15 @@
 							/>
 						</svg>
 						<span class="ms-3 flex-1 whitespace-nowrap">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="/transactions"
+						class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+					>
+						<ArrowLeftRight />
+						<span class="ms-3 flex-1 whitespace-nowrap">Transactions</span>
 					</a>
 				</li>
 				<li>

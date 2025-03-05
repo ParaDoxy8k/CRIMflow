@@ -10,7 +10,7 @@
 </script>
 <div class="flex h-screen">
 	<Sidebar />
-	<main class="flex-1 bg-gray-900 overflow-y-auto">
+	<main class="flex-1 bg-white dark:bg-zinc-950 overflow-y-auto">
 		{#if $isOverlayOpen }
 			<Overlay />
 		{/if}
