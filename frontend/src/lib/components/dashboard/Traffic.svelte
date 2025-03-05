@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { Card, Chart } from 'flowbite-svelte';
-	import options from '../dashboard/graphs/traffic';
-	import SmallPanel from '../dashboard/SmallPanel.svelte';
+	import options from '../graphs/traffic';
+	import SmallPanel from './SmallPanel.svelte';
+	import { DesktopPcOutline, MobilePhoneOutline, TabletOutline } from 'flowbite-svelte-icons';
 	import More from '$lib/utils/widgets/More.svelte';
-    import {MonitorSmartphone,Smartphone,Tablet} from 'lucide-svelte';
 
 	export let dark: boolean = false;
 </script>
@@ -23,13 +23,13 @@
 	<Chart options={options(dark)}></Chart>
 	<div class="mb-4 flex items-center justify-between pt-4 sm:pt-6 lg:justify-evenly">
 		<SmallPanel title="Desktop" subtitle="234k" change={4}>
-			<MonitorSmartphone slot="icon" size="xl" class="mb-1"/>
+			<DesktopPcOutline slot="icon" size="xl" class="mb-1" />
 		</SmallPanel>
 		<SmallPanel title="Phone" subtitle="94k" change={-1}>
-			<Smartphone slot="icon" size="xl" class="mb-1"/>
+			<MobilePhoneOutline slot="icon" size="xl" class="mb-1" />
 		</SmallPanel>
 		<SmallPanel title="Tablet" subtitle="16k" change={-0.6}>
-			<Tablet slot="icon" size="xl" class="mb-1"/>
+			<TabletOutline slot="icon" size="xl" class="mb-1" />
 		</SmallPanel>
 	</div>
 </Card>

@@ -1,4 +1,5 @@
 <script>
+// @ts-nocheck
 	import { isOverlayOpen } from '../../stores/Overlay.js';
 	export let open = false;
 	export let product = null;

@@ -14,9 +14,13 @@
 		TableHead,
 		TableHeadCell
 	} from 'flowbite-svelte';
-	import {Calendar1 , ChevronDownCircle, ChevronRightCircle } from 'lucide-svelte';
-	import CreditCard from '../dashboard/CreditCard.svelte';
-	import StatusBadge from '../dashboard/BarCharts.svelte';
+	import {
+		CalendarMonthOutline,
+		ChevronDownOutline,
+		ChevronRightOutline
+	} from 'flowbite-svelte-icons';
+	import CreditCard from '$lib/components/transactions/CreditCard.svelte';
+	import StatusBadge from '$lib/components/transactions/StatusBadge.svelte';
 
 	export let dark: boolean = false;
 
@@ -56,7 +60,7 @@
 			<div class="flex items-center">
 				<Button color="alternative" class="w-fit whitespace-nowrap px-4 py-2">
 					Filter by status
-					<ChevronDownCircle size="lg" />
+					<ChevronDownOutline size="lg" />
 				</Button>
 				<Dropdown class="w-44 space-y-3 p-3 text-sm" placement="bottom-start">
 					<li><Checkbox class="accent-primary-600">Completed (56)</Checkbox></li>
@@ -67,10 +71,10 @@
 			</div>
 			<div class="flex items-center space-x-4">
 				<Input placeholder="From" class="w-full">
-					<Calendar1 slot="left" size="md" />
+					<CalendarMonthOutline slot="left" size="md" />
 				</Input>
 				<Input placeholder="To" class="w-full">
-					<Calendar1 slot="left" size="md" />
+					<CalendarMonthOutline slot="left" size="md" />
 				</Input>
 			</div>
 		</div>
@@ -102,9 +106,9 @@
 					>
 						<CreditCard number={method} /> <span>••• {method}</span>
 					</TableBodyCell>
-					<TableBodyCell class="px-4 font-normal">
-						<StatusBadge state={status} {dark} />
-					</TableBodyCell>
+					<TableBodyCell class="px-4 font-normal"
+						><StatusBadge state={status} {dark} /></TableBodyCell
+					>
 				</TableBodyRow>
 			{/each}
 		</TableBody>
@@ -115,7 +119,7 @@
 			href="#top"
 			class="inline-flex items-center rounded-lg p-1 text-xs font-medium uppercase text-primary-700 hover:bg-gray-100 dark:text-primary-500 dark:hover:bg-gray-700 sm:text-sm"
 		>
-			Transactions report <ChevronRightCircle size="lg" />
+			Transactions report <ChevronRightOutline size="lg" />
 		</a>
 	</div>
 </Card>
